@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: ping
   #connection: local
   gather_facts: no
   vars:
