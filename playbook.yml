@@ -9,5 +9,5 @@
      shell: "/usr/bin/ping -c 1 {{ remote_host }}"
      changed_when: false
 
-    - name: check date
-      shell: date
+   - name: check date
+     shell: date
