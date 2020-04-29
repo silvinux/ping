@@ -7,7 +7,7 @@
   tasks:
    - name: Ping {{ remote_host }}
      shell: "ping -c 1 {{ remote_host }}"
-     ignore_errors: yes
+     #ignore_errors: yes
      #changed_when: false
 
    - name: check date
