@@ -6,5 +6,8 @@
     remote_host: 1.1.1.1
   tasks:
    - name: Ping {{ remote_host }}
-     command: "/usr/bin/ping -c 1 {{ remote_host }}"
+     shell: "/usr/bin/ping -c 1 {{ remote_host }}"
      changed_when: false
+
+    - name: check date
+      shell: date
