@@ -5,9 +5,9 @@
   vars:
     remote_host: 1.1.1.1
   tasks:
-   #- name: Ping {{ remote_host }}
-   #  shell: "ping -c 1 {{ remote_host }}"
-   #  changed_when: false
+   - name: Ping {{ remote_host }}
+     shell: "ping -c 1 {{ remote_host }}"
+     #changed_when: false
 
    - name: check date
      shell: date
